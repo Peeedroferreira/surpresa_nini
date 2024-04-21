@@ -5,7 +5,7 @@ body {
     background: linear-gradient(to right, #88b04b, #6b8e23); /* Verde mais suave */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -93,30 +93,33 @@ button:hover {
 }
 
 #imageContainer {
-    width: 100%;
-    max-width: 600px; 
-    max-height: 500px; 
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    width: 100%; /* Largura total para melhor visualização */
+    max-width: 800px; /* Controle sobre a largura máxima */
+    margin: auto; /* Centraliza o container */
+    display: flex; /* Usando flexbox para alinhar as imagens */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em múltiplas linhas se necessário */
 }
 
 @media (max-width: 414px) {
     .primeiro-parágrafo {
-        font-size: 20px; 
-        padding: 15px; 
-        margin: 10px auto; 
+        font-size: 20px;
+        padding: 15px;
+        margin: 10px auto;
     }
 
     button {
-        font-size: 16px; 
-        padding: 10px 20px; 
-        margin: 20px 0; 
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 20px 0;
     }
 
     body {
-        padding-top: 20px; 
+        padding-top: 40px; /* Aumentado de 20px para 40px */
+    }
+
+    h2 {
+        margin-top: 30px; /* Garantir que o cabeçalho não fique escondido */
     }
 }
