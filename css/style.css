@@ -10,6 +10,7 @@ body {
     height: 100vh;
     margin: 0;
     padding-top: 50px;
+    
 }
 
 .primeiro-parágrafo {
@@ -123,3 +124,5 @@ button:hover {
         margin-top: 30px; /* Garantir que o cabeçalho não fique escondido */
     }
 }
+
+
